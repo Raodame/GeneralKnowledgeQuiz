@@ -9,7 +9,7 @@ public class MyersBriggs {
                 "MBTI Test", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, typeOfTest, typeOfTest[0]);
 
         if (test == 0){
-            System.out.println("simple");
+            JOptionPane.showMessageDialog(null, "Simple test currently unavailable.","Simple Test", JOptionPane.WARNING_MESSAGE);
         }
         if (test == 1){
             JOptionPane.showMessageDialog(null, "Elaborate test currently unavailable.","Elaborate Test", JOptionPane.WARNING_MESSAGE);
