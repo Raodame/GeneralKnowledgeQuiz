@@ -18,5 +18,9 @@ public class Runner {
 
         JOptionPane.showMessageDialog(null,name + ", you scored a " + score + " out of 3.","Results", JOptionPane.INFORMATION_MESSAGE);
 
+
+//        String[] options = {"yes", "no"};
+//        int test = JOptionPane.showOptionDialog(null, "Test", "Test", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+//        System.out.println(test);
     }
 }
