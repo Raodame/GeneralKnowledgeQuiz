@@ -4,6 +4,7 @@ public class MyersBriggs {
     public static void main(String[] args) {
 
         String[] typeOfTest = {"Simple", "Elaborate"};
+        String typeResult = "";
 
         String[] simple1 = {"by yourself", "with a group of people"};
         String[] simple2 = {"facts", "ideas"};
@@ -11,16 +12,12 @@ public class MyersBriggs {
         String[] simple4 = {"organized and consistent efforts", "spontaneous bursts of energy"};
 
         String[] elaborateList = {"Strongly Disagree", "Disagree", "Somewhat Disagree", "Neutral", "Somewhat Agree", "Agree", "Strongly Agree"};
-
         int currentQuestion;
 
         int focusOfAttention = 0; //I vs E
         int informationInput = 0; //S vs N
         int decisionMaking = 0; //T vs F
         int lifestyle = 0; //J vs P
-
-        String typeResult = "";
-
 
         int test = JOptionPane.showOptionDialog(null, "Welcome to the Myers-Briggs Type Indicator.\nWould you like to take the Simple or Elaborate Test?",
                 "Type of Test", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, typeOfTest, typeOfTest[0]);
@@ -385,9 +382,7 @@ public class MyersBriggs {
         else
             typeResult += "x";
 
-
         JOptionPane.showMessageDialog(null, "Thank you for taking the Myers-Briggs Type Indicator.\n\nYour result: " + typeResult,
                 "Results", JOptionPane.INFORMATION_MESSAGE);
-
     }
 }
