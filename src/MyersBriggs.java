@@ -23,11 +23,6 @@ public class MyersBriggs {
                 "Type of Test", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, typeOfTest, typeOfTest[0]);
 
         if (test == 1){
-
-//            JOptionPane.showMessageDialog(null, "Welcome to the Elaborate Myers-Briggs Type Indicator." +
-//                    "\nAnswer questions on a scale from \"Strongly Disagree\" to \"Strongly Agree\"." +
-//                    "\n");
-
             currentQuestion = JOptionPane.showOptionDialog(null, "It's easy for me to meet and make friends.",
                     "Question 1", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, elaborateList, elaborateList[0]);
             if (currentQuestion == 0)
