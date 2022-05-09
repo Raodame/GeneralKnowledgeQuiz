@@ -22,5 +22,9 @@ public class Runner {
 //        String[] options = {"yes", "no"};
 //        int test = JOptionPane.showOptionDialog(null, "Test", "Test", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
 //        System.out.println(test);
+
+        //            JOptionPane.showMessageDialog(null, "Elaborate test currently unavailable.",
+//                    "Elaborate Test", JOptionPane.WARNING_MESSAGE);
+//            System.exit(0);
     }
 }
