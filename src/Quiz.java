@@ -40,7 +40,7 @@ public class Quiz {
         int lifestyle = 0; //J vs P
 
         int test = JOptionPane.showOptionDialog(null, "Welcome to the Myers-Briggs Type Indicator.\nWould you like to take the Simple or Elaborate Test?",
-                "Type of Test", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, typeOfTest, typeOfTest[0]);
+                "Type of Test", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, typeOfTest, null);
 
         if (test == 1){
             currentQuestion = questionnaire("It's easy for me to meet and make friends.",1,elaborateList);
@@ -160,7 +160,7 @@ public class Quiz {
 
         while(over == 0) {
             over = JOptionPane.showOptionDialog(null, "Thank you for taking the Myers-Briggs Type Indicator.\n\nYour result: " + typeResult,
-                    "Results", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, overview, overview[1]);
+                    "Results", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, overview, null);
             if (over == 0) {
 //            JOptionPane.showOptionDialog(null, typeResult.substring(0,1) + ": " + Math.abs(Math.round(focusOfAttention/15)*50) + 50 + "%",
 //                    "Overview", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,null, overview, overview[1]);
@@ -204,6 +204,6 @@ public class Quiz {
 
     private static int questionnaire(String q, int num, String[] list){
         return JOptionPane.showOptionDialog(null, q,
-                "Question " + num, JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, list, list[0]);
+                "Question " + num, JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, list, null);
     }
 }
